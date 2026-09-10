@@ -8,6 +8,7 @@ export default function Home() {
       <div className="topbar-inner">
         <a className="wordmark" href="#main">Snehal Sinha<span> / Quantitative Finance</span></a>
         <div className="resume-actions">
+          <a className="linkedin-top" href="https://www.linkedin.com/in/ssinhaquant/" target="_blank" rel="noopener noreferrer" aria-label="Open Snehal Sinha’s LinkedIn profile in a new tab"><span className="linkedin-mark" aria-hidden="true">in</span> LinkedIn <ArrowUpRight size={16} aria-hidden="true"/></a>
           <a className="download" href={resume} download="Snehal-Sinha-Resume.pdf" target="_blank" rel="noopener noreferrer"><ArrowDownToLine size={17} aria-hidden="true"/> Download résumé <span className="pdf-label">PDF</span></a>
           <a className="view-pdf" href={resume} target="_blank" rel="noopener noreferrer" aria-label="Open résumé PDF in a new tab">Open PDF <ArrowUpRight size={15} aria-hidden="true"/></a>
         </div>
@@ -19,7 +20,8 @@ export default function Home() {
           <p className="eyebrow"><span className="status-dot"/> Quantitative research · Portfolio risk</p>
           <h1 id="intro-heading">Snehal<br/><em>Sinha.</em></h1>
           <p className="credential">Georgia Tech MS QCF · Atlanta, GA</p>
-          <p className="intro-copy">I build quantitative models that connect <strong>research to real-world investment risk.</strong> Previously in Aladdin Financial Engineering at <strong>BlackRock</strong>, now pursuing my master’s in Quantitative and Computational Finance at <strong>Georgia Tech</strong>.</p>
+          <p className="intro-copy">As a believer of thinking from first principles, I am most enthusiastic about the dynamics in the market and how various systems come together to influence price movement.</p>
+          <p className="intro-copy">Experience with development and validation of models using sparse and biased return data to determine daily factor risk decomposition for Private market positions for <strong><em>Portfolio Construction and Asset Allocation</em></strong> for over $300B USD AUM.</p>
           <div className="contact-links"><a href="mailto:ssinha373@gatech.edu"><Mail size={17} aria-hidden="true"/> Email me</a><a href="https://www.linkedin.com/in/ssinhaquant/" target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRight size={16} aria-hidden="true"/></a></div>
         </div>
         <figure className="portrait"><div className="portrait-frame"><img src="/snehal-sinha.jpg" alt="Snehal Sinha" width={3327} height={3327} fetchPriority="high"/></div><figcaption>S. SINHA <span>ATLANTA, GA / 2026</span></figcaption></figure>

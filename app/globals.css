@@ -18,6 +18,9 @@ a:hover { color:var(--primary); }
 .wordmark { font-family:Consolas,monospace; font-size:15px; letter-spacing:.02em; }
 .wordmark span { color:var(--muted-foreground); font-size:12px; }
 .resume-actions { display:flex; align-items:center; gap:18px; }
+.linkedin-top { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:48px; padding:11px 15px; border:1px solid #438fd2; border-radius:4px; background:#0a66c2; color:#fff; font-size:14px; font-weight:700; white-space:nowrap; }
+.linkedin-top:hover { background:#07559f; color:#fff; }
+.linkedin-mark { font-family:Arial,Helvetica,sans-serif; font-size:19px; font-weight:700; line-height:1; }
 .download { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 17px; background:var(--primary); color:#111820; border:1px solid var(--primary); border-radius:4px; font-size:14px; font-weight:700; min-height:48px; white-space:nowrap; }
 .download:hover { color:#111820; background:#edcd8f; }
 .pdf-label { border-left:1px solid #887147; padding-left:10px; font-size:12px; }
@@ -100,4 +103,7 @@ footer>div:last-child>a:last-child { color:var(--primary); }
 @media(max-width:900px) { .resume-section{grid-template-columns:175px minmax(0,1fr);gap:26px}.entry-heading{flex-wrap:wrap;gap:5px} }
 @media(max-width:660px) { .resume-section{grid-template-columns:1fr;gap:25px;padding:40px 0}.section-heading{display:flex;gap:18px;align-items:baseline}.section-heading h2{margin:0;font-size:30px}.section-heading br{display:none}.section-nav{gap:4px 21px}.organization>span{font-size:11px}.cubing{padding:22px 18px}.cube-records strong{font-size:40px}footer{flex-direction:column}footer>div:last-child{align-items:flex-start}.wca-id{width:100%;margin-left:0} }
 @media print { .topbar,.section-nav,.skip-link{display:none}body{background:#fff;color:#111}p,li,.credential{color:#333!important}strong,h1 em,.highlights strong{color:#111}.wrap{max-width:none}.resume-section{break-inside:avoid} }
+@media(max-width:1040px) { .wordmark span { display:none; } }
+@media(max-width:760px) { .topbar-inner { justify-content:center; }.wordmark { width:100%; text-align:center; }.resume-actions { justify-content:center; flex-wrap:wrap; gap:8px 12px; }.download { flex:initial; } }
+@media(max-width:440px) { .resume-actions { display:grid; grid-template-columns:auto minmax(0,1fr); width:100%; gap:4px 8px; }.linkedin-top { padding:10px; }.download { min-width:0; gap:6px; font-size:13px; padding:10px; }.pdf-label { display:none; }.view-pdf { grid-column:1/-1; justify-self:center; min-height:32px; } html { scroll-padding-top:175px; } }
 @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto} }
